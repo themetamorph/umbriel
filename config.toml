@@ -1,0 +1,35 @@
+
+[include]
+files = ["keybinds.toml", "input.toml", "appearence.toml", "window-rules.toml", "animations.toml", "outputs.toml", "workspaces.toml"]
+
+[include.optional]
+files = ["noctalia.toml"]
+
+[environment]
+ELECTRON_OZONE_PLATFORM_HINT = "auto"
+SDL_VIDEODRIVER = "wayland"
+QT_QPA_PLATFORMTHEME = "qt6ct"
+
+[general]
+autostart = ["noctalia", "kitty"]
+xwayland = true
+
+[layout]
+extent_presets = [0.333, 0.5, 0.667]
+
+[layout.scrolling]
+default_extent_fraction = 0.5
+
+[hot_corners.top_left]
+enabled = true
+delay_ms = 150
+action = "overview-open"
+
+[overview]
+zoom = 0.5
+scroll_factor_horizontal = 1.0
+scroll_factor_vertical = 1.0
+background_blur = true
+workspace_wallpaper = true
+shortcuts = true
+shortcut_keys = "1234567890"

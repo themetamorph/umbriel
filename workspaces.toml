@@ -1,0 +1,15 @@
+[[workspace]]
+name = "Terminal"
+layout.mode = "master"
+
+[[workspace]]
+name = "Web"
+layout.mode = "scrolling"
+
+[[workspace]]
+name = "Steam"
+layout.mode = "scrolling"
+
+[[workspace]]
+name = "College"
+layout.mode = "dwindle"

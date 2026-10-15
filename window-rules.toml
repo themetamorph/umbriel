@@ -1,0 +1,14 @@
+# Blur every window
+[[window_rule]]
+blur = true
+opacity = 0.8
+
+[[window_rule]]
+match.is_focused = false
+opacity = 0.7
+
+[[layer_rule]]
+match.namespace = "^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"
+blur = true
+blur_ignore_alpha = 0.2
+blur_optimized = false
